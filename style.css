@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins, sans-serif;
+}
+nav{
+    padding: 1.4em 0px;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(203, 203, 203);
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 1.7em;
+}
+.nav-left img{
+    height: 1.7em;
+}
+.nav-left button{
+    font-size: 1.1em;
+    color: white;
+    background-image: linear-gradient(to right, rgb(242,169,62), rgb(240,112,84));
+    border: none;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.3em 0.6em;
+    border-radius: 30px;
+}
+.nav-center ul{
+    display: flex;
+    gap: 1.3em;
+}
+.nav-center ul li{
+    color: rgb(61,61,61);
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.account{
+    display: flex;
+    gap: 0.5em;
+}
+.account img{
+    height: 4.3vh;
+    border-radius: 100%;
+}
+.account-name div:nth-child(1){
+    font-size: 0.9em;
+    color: gray;
+}
+.account-name div:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1em;
+}

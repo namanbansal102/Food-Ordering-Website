@@ -4,6 +4,7 @@
 }
 body{
     font-family: Poppins, sans-serif;
+    background-color: hsl(0, 0%, 90%);
 }
 nav{
     padding: 1.4em 0px;
@@ -38,11 +39,18 @@ nav{
     display: flex;
     gap: 1.3em;
 }
-.nav-center ul li{
+.nav-center li{
+    display: flex;
+    align-items: center;
+    color: rgb(61,61,61);
+    font-size: 1.1em;
+}
+.nav-center ul a{
     color: rgb(61,61,61);
     font-size: 1.3em;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .nav-right{
     display: flex;
@@ -64,4 +72,158 @@ nav{
 .account-name div:nth-child(2){
     font-weight: 500;
     font-size: 1.1em;
+}
+
+.bg-image{
+    width: 90vw;
+    margin: 2em auto;
+}
+.bg-image img{
+    width: 90vw;
+}
+.facilities{
+    width: 80vw;
+    margin: 3em auto;
+    display: flex;
+    gap: 2em;
+    border-bottom: 0.5px solid rgb(203, 203, 203);
+}
+.facility{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0px;
+    gap: 1em;
+}
+.facility img{
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+.facility-detail div:nth-child(1){
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+.facility-detail div:nth-child(2){
+    font-size: 0.9em;
+    line-height: 1.3em;
+    color: gray;
+}
+
+.section-head div:nth-child(1){
+    color: rgb(33, 37, 41);
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+.section-head div:nth-child(2){
+    /* color: rgb(240,112,84); */
+    background: linear-gradient(to right, rgb(242,169,62), rgb(240,112,84));
+    background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+.grid-container{
+    width: 90vw;
+    margin: 4em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.grid{
+    position: relative;
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    background-color: white;
+    border-radius: 15px;
+}
+.off{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    height: 5vh;
+    padding: 0.8em;
+    background-color: hsl(0, 0%, 90%);
+}
+.off div:nth-child(2){
+    font-size: 1.2em;
+    font-weight: 550;
+}
+.white-box{
+    width: 9vw;
+    border-radius: 15px;
+    position: absolute;
+    right: 0px;
+    filter: grayscale(50%);
+}
+.item-image:hover{
+    scale: 1.1;
+}
+.grid div:nth-child(1){
+    width: 21vw;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.item-image{
+    width: 21vw;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.place-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0.5em;
+}
+.place-name div:nth-child(1){
+    font-size: 1.2em;
+    font-weight: 550;
+    cursor: pointer;
+}
+.place-name div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    font-size: 1.2em;
+}
+.place-name span{
+    color: darkgreen;
+}
+.place-item{
+    color: gray;
+    font-size: 1.05em;
+    padding: 0px 0.5em;
+}
+.place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(84, 84, 84);
+    padding: 0px 0.5em 0.7em 0.5em;
+}
+.place div:nth-child(2){
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}
+.place div:nth-child(3){
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+
+}
+.place span{
+    background-image: linear-gradient(to right, rgb(242,169,62), rgb(240,112,84));
+    border-radius: 100%;
+    color: white;
+    font-size: 1em;
 }

@@ -50,6 +50,10 @@ body{
     transition: 0.3s ease-out;
    
 }
+.head-nav ul li a{
+    display: flex;
+    align-items: center;
+}
 .head-logo img{
     width: 10vw;
     filter: invert(100%);

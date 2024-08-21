@@ -49,6 +49,10 @@ body{
     transition: 0.3s ease-out;
    
 }
+.head-nav ul li a{
+    display: flex;
+    align-items: center;
+}
 .head-logo img{
     width: 10vw;
     filter: invert(100%);
@@ -733,7 +737,6 @@ html {
 /* for-FOOTER */
 footer{
     background-image: url("images/home-bg2.png");
-    width: 100vw;
     background-position: center center;
 }
 .footer-1{

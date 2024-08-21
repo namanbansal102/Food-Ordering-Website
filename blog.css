@@ -264,7 +264,7 @@ border-radius: 6%;
     background-color: #f9f9f9;
     font-size: 18px;
     height: 8vh;
-    width: 21vw;
+    width: 19vw;
     padding: 1rem;
     
 }
@@ -692,3 +692,18 @@ html {
     width: 90%;
     margin-left: 4.8vw;
 }
+.head-logo button{
+    font-size: 1.1em;
+    color: white;
+    background-image: linear-gradient(to right, rgb(242,169,62), rgb(240,112,84));
+    border: none;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.3em 0.6em;
+    border-radius: 30px;
+}
+
+
+/* for-review-2 */

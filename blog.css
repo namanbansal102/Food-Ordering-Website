@@ -692,6 +692,7 @@ html {
     background-color: #f3f3f3;
     box-sizing: border-box;
     font-size: 14px;
+    resize: none;
 }
 
 .form-field input::placeholder,

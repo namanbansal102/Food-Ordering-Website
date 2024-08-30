@@ -25,7 +25,7 @@ nav{
     gap: 1.7em;
 }
 .nav-left img{
-    height: 1.7em;
+    height: 3.5rem;
 }
 .nav-left button{
     font-size: 1.1em;
@@ -376,7 +376,7 @@ footer{
 }
 .first img{
     filter: invert();
-    height: 4vh;
+    height: 6vh;
 }
 .first p{
     color: gray;

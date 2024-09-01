@@ -293,9 +293,7 @@ main{
     }
 
   @media only screen and (max-width: 700px) {
-    footer{
-      display: none;
-    }
+
     .side-menu{
       display: block;
     }
@@ -415,4 +413,137 @@ main{
   background-color: #f9f9f9;
   overflow-y: auto;
 }
+
+.footer-1{
+  display: block;
+}
+.footer-top{
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+.footer-inner-1 {
+  width: 81vw;
+}
+
+.footer-inner-2 button {
+  width: 26vw;
+ 
+  font-size: small;
+
+}
+
+.footer-inner-2 input {
+  height: 6.5vh;
+  width: 50vw;
+}
+
+
+
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2vh;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:100%
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1.5rem;
+  width: 90%;
+}
+.toggle {
+  display: flex;
+  /* border: 2px solid white; */
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 1rem; */
+  height: 4vh;
+  align-items: center;
+}
+
+.sec-1{
+  align-items: center;
+}
+.NRF{
+  display: none;
+}
+footer{
+  display: block;
+}
+}
+
+  @media only screen and (min-width: 710px) and (max-width: 1351px) {
+ /* FOR footer also for the above mediaquery    */
+    .footer-1{
+      display: block;
+  }
+  .footer-top{
+      flex-direction: column;
+      margin-top: 20vh;
+  }
+  
+  .footer-inner-1 {
+      width: 81vw;
+  }
+  
+  .footer-inner-2 button {
+      width: 26vw;
+     
+      font-size: small;
+  
+  }
+  
+  .footer-inner-2 input {
+      height: 6.5vh;
+      width: 50vw;
+  }
+  
+  
+  
+  .footer-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 2vh;
+  }
+  .second {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width:100%
+  }
+  .first {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      gap: 1.5rem;
+      width: 90%;
+  }
+  .toggle {
+      display: flex;
+      /* border: 2px solid white; */
+      width: 100%;
+      justify-content: space-between;
+      /* padding: 1rem; */
+      height: 4vh;
+      align-items: center;
+  }
+  
+  .sec-1{
+      align-items: center;
+  }
+  .NRF{
+      display: none;
+  }
+  footer{
+    display: block;
+  }
   }

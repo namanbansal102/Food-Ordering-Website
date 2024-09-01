@@ -6,8 +6,7 @@
     
 }
 div{
-    /* border: 1px solid white; */
-    /* border: 1px solid #000000; */
+    /* border: 1px solid black;     */
 }
 body{
     padding: 0;
@@ -153,10 +152,6 @@ border-radius: 6%;
     flex-direction: column;
     align-items: center;
 }
-.head-2-2 img{
-    height: 3vh;
-    filter: invert(100%);
-}
 
 main{
     display: flex;
@@ -165,16 +160,11 @@ main{
     margin-top: 50px;
 }
 .container{
-    width: 84vw;
+    width: 90vw;
     display: flex;
 }
 .container-child1{
     width: 77vw;
-}
-.container-child2{
- width: 23vw;
- margin-left: 20px;
- background-color: white;
 }
 .restaurant-navbar{
     display: flex;
@@ -187,6 +177,7 @@ main{
     li{
         list-style: none;
     }
+    color: rgb(116, 116, 116);
 }
 .content{
     display: flex;
@@ -208,6 +199,7 @@ main{
     }
     .sup{
         line-height: 2;
+        color: #3d3d3d;
     }
 }
 .fooditems{
@@ -233,4 +225,132 @@ main{
         height: 20px;
         width: 20px;
     }
+}
+
+.item-card{
+    padding: 20px;
+}
+.title{
+    font-size: x-large;
+    margin: 0;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+.card-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.card-container-start{
+    width: 22%;
+    /* overflow: hidden; */
+    img{        
+        height: 138px;
+        width: 138px;
+        border-radius: 7px;
+    }
+}
+.card-container-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 5px; */
+    width: 58%;
+    p{
+        font-size: 16px;
+        color: rgb(116, 116, 116);
+    }
+}
+.card-container-middle div:nth-child(1){
+    display: flex;
+    gap: 5px;
+    .item-name{
+        color: #3d3d3d;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+}
+.card-container-middle div:nth-child(2){
+    display: flex;
+    gap: 15px;
+    .ratings{
+        color: rgb(116, 116, 116);
+    }
+}
+.dashed-border{
+    border-bottom: 1px dashed rgb(116,116,116);
+    margin-top: 15px;
+}
+.card-container-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    color: rgb(242, 169, 62);
+    h2{
+        font-weight: 600;
+    }
+}
+.add-button{
+    display: flex;
+    border: 1px solid rgb(242, 169, 62);
+    width: 80%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+.add-button:hover{
+    background: linear-gradient(to right,rgb(242, 169, 62),rgb(240,112,84));
+    color: white;
+    transition: 0.2s ease-in;
+}
+hr{
+    background-color: rgb(232,232,232);
+    border: none;
+    height: 1.5px;
+}
+.container-child2{
+    width: 23vw;
+    margin-left: 20px;
+    background-color: white;
+    padding: 20px;
+    h4{
+        color: #3d3d3d;
+        font-weight: 600;
+        margin: 5px 0px;
+        font-size: large;
+    }
+    h5{
+        color: rgb(116, 116, 116);
+        font-size: medium;
+        margin-bottom: 20px;
+    }
+   }
+.cart-item-card div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item-card div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    height: ;
+}
+.cart-item-counter{
+    border: 1px solid rgb(232,232,232);
+    border-radius: 6px;
+    background-color: rgb(249,249,249);
+    display: flex;
+    justify-content: space-evenly;
+    width: 23%;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.cart-item-counter div:nth-child(2){
+    border-left: 1px solid rgb(232,232,232);
+    border-right: 1px solid rgb(232,232,232);
+    padding: 0px 10px;
+    color: rgb(242, 169, 62);
 }

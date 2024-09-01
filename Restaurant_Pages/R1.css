@@ -7,11 +7,13 @@
 }
 div{
     /* border: 1px solid white; */
-    border: 1px solid black;
+    /* border: 1px solid #000000; */
 }
 body{
     padding: 0;
     margin: 0;
+    background-color: #F9F9F9;
+
 }
 
 .head{
@@ -160,36 +162,75 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid rgb(189, 15, 15); */
-    background-color: #F9F9F9;
+    margin-top: 50px;
 }
 .container{
     width: 84vw;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 .container-child1{
     width: 77vw;
 }
 .container-child2{
  width: 23vw;
+ margin-left: 20px;
+ background-color: white;
 }
 .restaurant-navbar{
     display: flex;
     align-items: center;
     gap: 4vw;
     font-size: larger;
-}
-.restaurant-navbar li{
-    list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 30px;
+    margin-bottom: 20px;
+    li{
+        list-style: none;
+    }
 }
 .content{
     display: flex;
+    gap: 20px;
 }
 .searchbar{
     width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    li{
+        list-style: none;
+    }
+    .sub{
+        color: rgb(116, 116, 116);
+        padding-left: 20px;
+        margin-bottom: 6px;
+    }
+    .sup{
+        line-height: 2;
+    }
 }
 .fooditems{
+    background-color: white;
     width: 70%;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #F9F9F9;
+    height: 30px;
+    input{
+        width: 95%;
+        height: 100%;
+        font-size: medium;
+        background-color: #F9F9F9;
+        border: none;
+        outline: none;   
+    }
+    margin-bottom: 1.2rem;
+    img{
+        height: 20px;
+        width: 20px;
+    }
 }

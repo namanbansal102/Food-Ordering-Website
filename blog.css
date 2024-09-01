@@ -10,7 +10,7 @@ body{
     color: white;
     margin: 0px;
     padding: 1rem;
-
+    
 }
 .border{
     border: 5px solid black;
@@ -55,7 +55,7 @@ body{
 }
 .head-logo img{
     width: 10vw;
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 .flex{
     display: flex;

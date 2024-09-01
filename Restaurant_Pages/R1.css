@@ -1,0 +1,195 @@
+*{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+div{
+    /* border: 1px solid white; */
+    border: 1px solid black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: white;
+    margin: 0px;
+    padding: 1rem;
+    height: 38vh;
+}
+
+.head-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.head-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.head-nav ul{
+    display: flex;
+    gap: 30px;
+    font-size: large;
+}
+.head-nav ul li a:hover{ 
+    color: #f3b253;
+    transition: 0.3s ease-in;
+
+}
+.head-nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+   
+}
+.head-nav ul li a{
+    display: flex;
+    align-items: center;
+}
+.head-logo img{
+    width: 10vw;
+    /* filter: invert(100%); */
+}
+.flex{
+    display: flex;
+}
+.head-logo button{
+    display: flex;
+    height: 4.3vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+    color: white;
+  gap: 1vw;
+padding: 0.5rem;
+border-radius: 6%;
+/* border-color: 2px solid black; */
+}
+.head-logo button img{
+    width: 2vw;
+    filter: invert(100%);
+    
+}
+.head-logo button:hover{
+    cursor: pointer;
+}
+
+.head-me-content{
+    display :flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    padding: 0px;
+
+}
+.head-me-content p,h5{
+    margin: 0px;
+    padding: 0px;
+}
+.head-nav ul li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.head-nav ul a li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.line{
+    height: 6vh;
+    border: 2px solid white;
+}
+.head-profile img{
+    height: 2rem;
+    filter: invert(100%);
+}
+.head-profile{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.head-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.img img{
+    height: 3rem;
+    border-radius: 30px;
+    filter: invert(0%);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
+}
+.img img:hover{
+    scale: 120%;
+
+}
+
+.head-2-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.head-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-2-2 img{
+    height: 3vh;
+    filter: invert(100%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(189, 15, 15); */
+    background-color: #F9F9F9;
+}
+.container{
+    width: 84vw;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.container-child1{
+    width: 77vw;
+}
+.container-child2{
+ width: 23vw;
+}
+.restaurant-navbar{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-size: larger;
+}
+.restaurant-navbar li{
+    list-style: none;
+}
+.content{
+    display: flex;
+}
+.searchbar{
+    width: 30%;
+}
+.fooditems{
+    width: 70%;
+}

@@ -212,7 +212,7 @@ main{
 .content{
     display: flex;
     gap: 20px;
-    height: 400vh;
+    height: 500vh;
 }
 .searchbar{
     height: 150vh;
@@ -347,7 +347,9 @@ hr{
     height: 1.5px;
 }
 .container-child2{
-    height: 100%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
     width: 23vw;
     margin-left: 20px;
     background-color: white;

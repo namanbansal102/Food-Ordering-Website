@@ -214,6 +214,7 @@ main{
     gap: 20px;
 }
 .searchbar{
+    height: 100%;
     width: 30%;
     background-color: white;
     display: flex;
@@ -343,6 +344,7 @@ hr{
     height: 1.5px;
 }
 .container-child2{
+    height: 100%;
     width: 23vw;
     margin-left: 20px;
     background-color: white;

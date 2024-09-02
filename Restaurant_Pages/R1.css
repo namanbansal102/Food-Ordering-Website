@@ -137,7 +137,7 @@ body{
     scale: 120%;
 }
 
-.head-2{
+.head-3{
     display: flex;
     justify-content: space-evenly;  
     height: 50%;
@@ -146,7 +146,7 @@ body{
         height: 100px;
     }
 }
-.head-2 div:nth-child(1){
+.head-3 div:nth-child(1){
     display: flex;
     h2{
         font-weight: 600;

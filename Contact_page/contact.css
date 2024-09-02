@@ -289,7 +289,7 @@ main{
     box-sizing: border-box;
   }
   .logo{
-    filter: invert(1);
+    /* filter: invert(1); */
     }
 
   @media only screen and (max-width: 700px) {

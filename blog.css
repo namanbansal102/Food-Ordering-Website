@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+
 .head{
     width: 100%;
     box-sizing: border-box;
@@ -959,6 +960,11 @@ body {
   .RF1{
     display: none;
   }
+
+  .logo-r{
+    /* filter: invert(1); */
+    /* border: 2px solid black; */
+}
 @media only screen and (max-width: 700px) {
     
     .responsive-head{
@@ -983,7 +989,7 @@ body {
     }
     .head-logo img {
         width: 11vw;
-        filter: invert(100%);
+        /* filter: invert(1); */
     }
 
     
@@ -1296,7 +1302,7 @@ height: 40px;
     }
     .head-logo img {
         width: 11vw;
-        filter: invert(100%);
+        /* filter: invert(1); */
     }
 
     

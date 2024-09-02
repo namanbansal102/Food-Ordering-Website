@@ -212,7 +212,7 @@ main{
 .content{
     display: flex;
     gap: 20px;
-    height: 470vh;
+    height: 800vh;
 }
 .searchbar{
     height: 150vh;

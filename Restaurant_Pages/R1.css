@@ -1,12 +1,8 @@
 *{
-    
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     
-}
-div{
-    /* border: 1px solid black;     */
 }
 body{
     padding: 0;
@@ -14,7 +10,6 @@ body{
     background-color: #F9F9F9;
 
 }
-
 .head{
     width: 100%;
     box-sizing: border-box;
@@ -23,6 +18,9 @@ body{
     margin: 0px;
     padding: 1rem;
     height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .head-logo{
@@ -72,10 +70,9 @@ body{
     background-color: #f42b03;
     background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
     color: white;
-  gap: 1vw;
-padding: 0.5rem;
-border-radius: 6%;
-/* border-color: 2px solid black; */
+    gap: 1vw;
+    padding: 0.5rem;
+    border-radius: 100px;
 }
 .head-logo button img{
     width: 2vw;
@@ -138,21 +135,54 @@ border-radius: 6%;
 }
 .img img:hover{
     scale: 120%;
-
 }
 
-.head-2-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
 .head-2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;  
+    height: 50%;
+    gap: 44%;
+    img{
+        height: 100px;
+    }
+}
+.head-2 div:nth-child(1){
+    display: flex;
+    h2{
+        font-weight: 600;
+        margin: 10px;
+    }
+    h3{
+        color: #fffc;
+        margin: 10px;
+    }
+}
+.restaurant-review{
+    padding: 12px;
 }
 
+.restaurant-review div{
+    display: flex;
+    h4{
+        margin: 10px;
+    }
+}
+.icons{
+    img{
+        height: 25px;
+        filter: invert(100%);
+        align-self: center;
+    }
+}
+
+.like{
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+/* Main Body */
 main{
     display: flex;
     justify-content: center;
@@ -228,7 +258,7 @@ main{
 }
 
 .item-card{
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 .title{
     font-size: x-large;
@@ -241,7 +271,7 @@ main{
     margin-top: 20px;
     gap: 20px;
 }
-.card-container-start{
+.card-container-start{  
     width: 22%;
     /* overflow: hidden; */
     img{        
@@ -336,7 +366,6 @@ hr{
 .cart-item-card div:nth-child(3){
     display: flex;
     justify-content: space-between;
-    height: ;
 }
 .cart-item-counter{
     border: 1px solid rgb(232,232,232);
@@ -353,4 +382,20 @@ hr{
     border-right: 1px solid rgb(232,232,232);
     padding: 0px 10px;
     color: rgb(242, 169, 62);
+}
+.subtotal,.discount,.topay{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0px;
+}
+.pay-button{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to right,rgb(242, 169, 62),rgb(240,112,84));
+    border-radius: 6px;
+    height: 2.5%;
+    font-size: large;
+    font-weight: 600;
+    color: white;
 }

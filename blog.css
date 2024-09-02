@@ -55,7 +55,7 @@ body{
 }
 .head-logo img{
     width: 10vw;
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 .flex{
     display: flex;
@@ -891,6 +891,7 @@ font-size:larger;
 
 
 
+
 /* //for the sidebar  */
 body {
     margin: 0;
@@ -1115,13 +1116,6 @@ width: 100%;
     justify-content: center;
     width: 100%;
 }
-
-.card-content p{
-    /* font-size: large; */
-
-}
-
-
 
 .head-1 {
     display: flex;
@@ -1435,13 +1429,6 @@ width: 100%;
     justify-content: center;
     width: 100%;
 }
-
-.card-content p{
-    /* font-size: large; */
-
-}
-
-
 
 .head-1 {
     display: flex;

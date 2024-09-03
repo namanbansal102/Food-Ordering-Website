@@ -1215,9 +1215,8 @@ form{
 }
 .more{
 display: block;
-/* filter: invert(1); */
-height: 40px;
-
+filter: invert();
+height: 30px;
 
 }
 .footer-1{

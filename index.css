@@ -350,7 +350,7 @@ a{
     border-radius: 15px;
 }
 .item-image{
-    width: 21vw;
+    width: 20rem;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s ease-in;
@@ -760,7 +760,7 @@ footer{
         width: 20vw;
     }
     .item-image{
-        width: 60vw;
+        /* width: 60vw; */
     }
     .place-name div:nth-child(1){
         font-size: 1em;

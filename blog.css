@@ -968,7 +968,7 @@ body {
     /* filter: invert(1); */
     /* border: 2px solid black; */
 }
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 700px) {
     
     .responsive-head{
         display: block;
@@ -1215,8 +1215,9 @@ form{
 }
 .more{
 display: block;
-filter: invert();
-height: 30px;
+/* filter: invert(1); */
+height: 40px;
+
 
 }
 .footer-1{

@@ -21,14 +21,25 @@ body{
     font-weight: 400
 }
 
+.more{
+    height: 6px;
+    width: 35px;
+    filter: invert(1);
+}
+.head-logo img{
+    /* filter: invert(1); */
+    /* filter: grayscale(); */
+    /* filter: invert(1); */
+}
 
 .head-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
+    
 }
+
 .head-1{
     display: flex;
     justify-content: space-evenly;
@@ -968,7 +979,7 @@ body {
     /* filter: invert(1); */
     /* border: 2px solid black; */
 }
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 700px) {
     
     .responsive-head{
         display: block;
@@ -1215,8 +1226,9 @@ form{
 }
 .more{
 display: block;
-filter: invert();
-height: 30px;
+/* filter: invert(1); */
+height: 40px;
+
 
 }
 .footer-1{
@@ -1650,3 +1662,9 @@ height: 40px;
     display: none;
 }
   }
+
+  /* .head-logo img{
+    filter: invert(1);
+    } */
+    
+    

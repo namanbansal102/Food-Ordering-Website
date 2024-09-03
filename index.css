@@ -350,7 +350,7 @@ a{
     border-radius: 15px;
 }
 .item-image{
-    width: 21vw;
+    width: 20rem;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s ease-in;
@@ -526,7 +526,7 @@ a{
         width: 20vw;
     }
     .item-image{
-        width: 60vw;
+        /* width: 60vw; */
     }
     .place-name div:nth-child(1){
         font-size: 1em;
@@ -1299,7 +1299,7 @@ height: 40px;
     }
     .section-head div:nth-child(1){
         width: fit-content;
-        margin-left: 80px;
+        margin-left: 0px;
     
     .facility-detail div:nth-child(1){
         font-size: 1em;
@@ -1336,7 +1336,11 @@ height: 40px;
         display: none;
     }
     nav{
+<<<<<<< HEAD
         /* width: 100vw; */
+=======
+        /* width: 115%; */
+>>>>>>> 39631cae7658f7ee0dc02025d08a8d21b447780e
         /* margin: 1.4vh 0vw; */
     }
     .nav-left img{
@@ -1353,7 +1357,11 @@ height: 40px;
     }
     .grid-container{
         grid-template-columns: 1fr 1fr;
+<<<<<<< HEAD
         /* margin-right:36px; */
+=======
+        margin-left:20px;
+>>>>>>> 39631cae7658f7ee0dc02025d08a8d21b447780e
     }
     .grid{
 

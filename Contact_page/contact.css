@@ -39,6 +39,9 @@ main{
     }
 }
 
+.more{
+  filter: invert(1);
+}
 
 .main-1{
     /* border: 2px solid black; */
@@ -90,7 +93,7 @@ main{
 }
 
 .contact-item {
-    display: flex
+    display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 8px;

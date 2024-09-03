@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 /* for the */
-.responsive-head{
-    display: none;
-}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -156,7 +153,7 @@ nav{
     font-weight: 500;
     font-size: 1.1em;
 }
-.head0{
+.head{
     width: 99vw;
     box-sizing: border-box;
 }
@@ -447,12 +444,103 @@ a{
     font-size: 1.3em;
     font-weight: 500;
 }
+/* footer{
+    background-image: url("images/home-bg2.png");
+    width: 99vw;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.footer-1{
+    width: 90vw;
+    box-sizing: border-box;
+    margin: 0px 4.5vw;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    border-bottom: 0.2px solid gray;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+    width: 28%;
+}
+.first img{
+    height: 6vh;
+}
+.first p{
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 530;
+    line-height: 2rem;
+}
+.media-logos{
+    display: flex;
+    gap: 1.3rem;
+}
+.media-logo{
+    background-color: #1e1c19;
+    border-radius: 100%;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.media-logo:hover{
+    transform: translateY(-10px);
+}
+.media-logo i{
+    filter: invert();
+    font-size: 1.3rem;
+    padding: 0.45rem;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.second div{
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.second div span{
+    font-size: 1.6rem;
+}
+.second span{
+    color: rgb(240,112,84);
+}
+.second ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.second ul li{
+    list-style: none;
+    color: gray;
+    font-size: 1.2rem;
+    transition: transform 0.4s ease;
+    font-weight: 540;
+    cursor: pointer;
+}
+.second ul li:hover{
+    color: rgb(242,169,62);
+    transform: translateX(6px);
+}
+.copyright{
+    text-align: center;
+    padding: 1.7rem 0rem;
+    color: white;
+    font-size: 1.2rem;
+} */
 
-
-footeee{
+footer{
     background-color: #2b2b2b;
    }
-   .footeee-1{
+   .footer-1{
        width: 90vw;
        margin: auto auto;
        padding: 4rem 0rem;
@@ -529,8 +617,8 @@ footeee{
    }
    
    
-   /* footeee top */
-   .footeee-top{
+   /* Footer top */
+   .footer-top{
        margin-top: 10vh;
        height: 30vh;
        width: 100%;
@@ -544,17 +632,17 @@ footeee{
        border-bottom: 2px solid #777;
    
    }
-   .footeee-inner-1 span{
+   .footer-inner-1 span{
        font-size: larger;
        font-weight: 500;
        width: 20vw;
    
    }
-   .footeee-inner-1{
+   .footer-inner-1{
        width: 40vw;
    }
    
-   .footeee-inner-2 input{
+   .footer-inner-2 input{
    height: 6.5vh;
    width: 30vw;
    /* background-color: #3d3f41; */
@@ -568,7 +656,7 @@ footeee{
    font-size:larger;
    
    }
-   .footeee-inner-2 button{
+   .footer-inner-2 button{
        height: 7.5vh;
        width: 15vw;
        background-color: #f42b03;
@@ -583,9 +671,14 @@ footeee{
        display: flex;
        gap: 1.2rem;
    }
+   .responsive-head{
+       display: none;
+   
+   }
    .RF1{
     display: none;
   }
+
 
 @media screen and (max-width: 1400px) {
     .image-1{
@@ -619,7 +712,7 @@ footeee{
     .left-details{
         gap: 1.5em;
     }
-    .footeee-1{
+    .footer-1{
         gap: 6rem;
     }
     .mobile-details{
@@ -665,7 +758,6 @@ footeee{
     }
     .grid{
         width: 20vw;
-        
     }
     .item-image{
         width: 60vw;
@@ -688,14 +780,11 @@ footeee{
         padding: 0px;
         padding-left: 5px;
     }
-    .footeee-1{
+    .footer-1{
         gap: 5rem;
     }
 }
 @media screen and (max-width: 1150px){
-    .responsive-head{
-        display: block;
-    }
     .mobile-img{
         height: 8em;
     }
@@ -703,7 +792,7 @@ footeee{
         gap: 10rem;
     }
     nav{
-        display: none;
+        /* display: none; */
     }
     .bg-image{
         display: none;
@@ -742,7 +831,7 @@ footeee{
         border: 2px solid black;
         height: 2.5em;
     }
-    .footeee-1{
+    .footer-1{
         gap: 4rem;
     }
 }
@@ -832,7 +921,6 @@ footeee{
     .second ul li{
         font-size: 1rem;
     }
-
 }
 @media screen and (max-width: 930px){
     .nav-left button{
@@ -989,7 +1077,13 @@ footeee{
         font-size: 0.65rem;
     }
 }
-@media screen and (max-width: 709px) {  
+@media screen and (max-width: 709px) {
+    .responsive-head{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    
+    }
     *{
         font-size: xx-small;
     }
@@ -1231,33 +1325,33 @@ height: 40px;
 
 
 }
-.footeee-1{
+.footer-1{
     display: block;
 }
-.footeee-top{
+.footer-top{
     flex-direction: column;
     margin-top: 20vh;
 }
 
-.footeee-inner-1 {
+.footer-inner-1 {
     width: 81vw;
 }
 
-.footeee-inner-2 button {
+.footer-inner-2 button {
     width: 26vw;
    
     font-size: small;
 
 }
 
-.footeee-inner-2 input {
+.footer-inner-2 input {
     height: 6.5vh;
     width: 50vw;
 }
 
 
 
-.footeee-1 {
+.footer-1 {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1474,7 +1568,7 @@ height: 40px;
 @media screen and (max-width: 400px){
    footer{
 
-    width: 100vh;
+    width: 60vh;
 
    }
     .nav-center{
@@ -1535,9 +1629,15 @@ a{
 
 
 @media only screen and (min-width: 710px) and (max-width: 1490px) {
-    footeee{
+    footer{
    
         margin-top: 30vh;
+    }
+    .responsive-head{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    
     }
     *{
         font-size: small;
@@ -1806,7 +1906,7 @@ height: 40px;
     box-sizing: border-box;
 }
 
-.footeee-1{
+.footer-1{
     display: none;
 }
 .responsive-tab{
@@ -1838,28 +1938,28 @@ height: 40px;
     border-radius: 30px;
     width: 10vw;
 }
-.footeee-top{
+.footer-top{
     flex-direction: column;
     margin-top: 20vh;
 }
 
-.footeee-inner-1 {
+.footer-inner-1 {
     width: 81vw;
 }
 
-.footeee-inner-2 button {
+.footer-inner-2 button {
     width: 26vw;
    
     font-size: small;
 
 }
 
-.footeee-inner-2 input {
+.footer-inner-2 input {
     height: 6.5vh;
     width: 50vw;
 }
 
-.footeee-1 {
+.footer-1 {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1896,9 +1996,6 @@ height: 40px;
 }
   };
 
-  @media screen and (max-width: 300px){
-
-  }
 
 
 

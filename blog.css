@@ -273,6 +273,9 @@ border-radius: 6%;
 
     box-sizing: border-box;
 }
+.search-box i{
+    display: none;
+}
 
 .search-box input {
     border: none;
@@ -991,6 +994,9 @@ body {
         width: 11vw;
         /* filter: invert(1); */
     }
+    .search-box input{
+        display: none   ;
+    }
 
     
 
@@ -1035,7 +1041,7 @@ body {
     flex-direction: column;
 }
 
-.search-box input {
+.search-box  {
 
     font-size: 14px;
 }
@@ -1286,6 +1292,9 @@ height: 40px;
         box-sizing: border-box;
     
     }
+    .search-box{
+        display: none;
+    }
     *{
         font-size: small;
     }
@@ -1377,6 +1386,9 @@ height: 100%;
 width: 100%;
 
     
+}
+.search-box i{
+    display: none;
 }
 
 .recent-post {

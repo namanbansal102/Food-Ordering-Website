@@ -267,7 +267,7 @@ nav{
     scale: 1.1;
 }
 .grid div:nth-child(1){
-    width: 21vw;
+    /* width: 21vw; */
     overflow: hidden;
     border-radius: 15px;
 }
@@ -545,7 +545,7 @@ footer{
         width: 20vw;
     }
     .item-image{
-        width: 20vw;
+        width: 60vw;
     }
     .place-name div:nth-child(1){
         font-size: 1em;
@@ -878,6 +878,7 @@ footer{
 @media screen and (max-width: 600px){
     nav{
         width: 100%;
+        border: 2px solid black;
         margin: 1.4vh 4vw;
     }
     .nav-center{
@@ -890,11 +891,22 @@ footer{
     .nav-center li span{
         display: none;
     }
+    .bg-image img{
+        width: 100vw;
+        height: 24vh;
+    }
     .bg-image-details{
         flex-direction: row;
         width: 100vw;
+        margin-top: 10px;
         padding: 1rem;
     }
+    .facility{
+        margin-left:10px;
+    }
+    .grid{
+    }
+    
     .right-details{
         display: none;
     }
@@ -920,7 +932,8 @@ footer{
         width: 28vw;
     }
     .item-image{
-        width: 28vw;
+        /* width: 293vw; */
+        /* height: 10vh; */
     }
     .off div:nth-child(1){
         font-size: 0.7em;
@@ -943,6 +956,7 @@ footer{
     }
     .place-item{
         font-size: 0.57em;
+        margin-left: 8px;
     }
     .place div:nth-child(1){
         font-size: 0.6em;
@@ -965,6 +979,12 @@ footer{
     .copyright{
         background-color: black;
         font-size: 1rem;
+    }
+    .nav-center{
+        display: none;
+    }
+    .nav-right{
+        padding-right: 30px;
     }
 }
 @media screen and (max-width: 500px){
@@ -998,7 +1018,15 @@ footer{
         gap: 0.5rem;
     }
     .section-head{
-        margin: auto auto;
+        /* margin: auto auto; */
+    }
+    .section-head div:nth-child(1){
+        width: fit-content;
+        margin-left: 30px;
+    }
+    .section-head div:nth-child(2){
+        width: fit-content;
+        margin-left: 140px;
     }
     .facility-detail div:nth-child(1){
         font-size: 1em;
@@ -1053,6 +1081,7 @@ footer{
 @media screen and (max-width: 400px){
     nav{
         width: 115%;
+        border: 2px solid black;
         /* margin: 1.4vh 0vw; */
     }
     .nav-left img{
@@ -1072,12 +1101,11 @@ footer{
         margin: 2em 4.5vw;
     }
     .grid{
+
         gap: 0.4em;
         width: 48vw;
     }
-    .item-image{
-        width: 48vw;
-    }
+   
     .service-phone{
         top: 0px;
     }

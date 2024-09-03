@@ -3,6 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* for the Sidebar */
+
+  .menu-list a{
+    border: 2px solid black;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#side-menu {
+      border: 2px solid black;
+      width: 60vw;
+      height: 100%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: 1s ease-out;
+    }
+    
+    .menu-header {
+        border: 2px solid black;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-header span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .menu-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+ 
+  .logo-r{
+    /* filter: invert(1); */
+    /* border: 2px solid black; */
+}
 html {
     scrollbar-width: thin;
     scrollbar-color: #FFA500 #f1f1f1;
@@ -606,6 +671,7 @@ footer{
         font-size: 1em;
     }
     .mobile-details img{
+        border: 2px solid black;
         height: 2.5em;
     }
     .footer-1{
@@ -972,6 +1038,7 @@ footer{
     }
     .mobile-details{
         right: 0em;
+        top: 150px;
     }
     .mobile-details div:nth-child(1){
         font-size: 1.3em;
@@ -1035,7 +1102,7 @@ footer{
         font-size: 0.7em;
     }
     .service-phone{
-        left: 0px;
+        margin-left: 15vw;
         height: 30vh;
     }
     .media-logos{

@@ -212,10 +212,10 @@ main{
 .content{
     display: flex;
     gap: 20px;
-    height: 600vh;
+    height: 560vh;
 }
 .searchbar{
-    height: 150vh;
+    height: 180vh;
     top: 0;
     position: sticky;
     width: 30%;
@@ -349,7 +349,7 @@ hr{
 .container-child2{
     position: sticky;
     top: 0;
-    height: 85vh;
+    height: 100vh;
     width: 23vw;
     margin-left: 20px;
     background-color: white;

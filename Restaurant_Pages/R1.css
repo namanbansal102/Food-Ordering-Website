@@ -214,9 +214,9 @@ main{
     gap: 20px;
 }
 .searchbar{
-    /* height: 180vh;
+    height: 100vh;
     top: 0;
-    position: sticky; */
+    position: sticky;
     height: fit-content;
     width: 30%;
     background-color: white;
@@ -346,9 +346,9 @@ hr{
     height: 1.5px;
 }
 .container-child2{
-    /* position: sticky;
+    position: sticky; 
     top: 0;
-    height: 100vh; */
+    height: 100vh; 
     height: fit-content;
     width: 23vw;
     margin-left: 20px;

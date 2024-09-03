@@ -212,12 +212,12 @@ main{
 .content{
     display: flex;
     gap: 20px;
-    height: 560vh;
 }
 .searchbar{
-    height: 180vh;
+    /* height: 180vh;
     top: 0;
-    position: sticky;
+    position: sticky; */
+    height: fit-content;
     width: 30%;
     background-color: white;
     display: flex;
@@ -277,10 +277,9 @@ main{
 }
 .card-container-start{  
     width: 22%;
-    /* overflow: hidden; */
     img{        
-        height: 138px;
-        width: 138px;
+        height: 7.5em;
+        width: 7.5em;
         border-radius: 7px;
     }
 }
@@ -347,9 +346,10 @@ hr{
     height: 1.5px;
 }
 .container-child2{
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    height: 100vh;
+    height: 100vh; */
+    height: fit-content;
     width: 23vw;
     margin-left: 20px;
     background-color: white;
@@ -401,8 +401,141 @@ hr{
     align-content: center;
     background: linear-gradient(to right,rgb(242, 169, 62),rgb(240,112,84));
     border-radius: 6px;
-    height: 4%;
+    height: 5rem;  
     font-size: large;
     font-weight: 600;
     color: white;
+}
+
+.responsive-head{
+    display: none;
+}
+.ccer{
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    .container-child2{
+        display: none;
+    }
+    .container-child1{
+        width: 100%;
+    }
+    .searchbar{
+        display: none;
+    }
+    .fooditems{
+        width: 100%;
+    }
+    .card-container-start{
+        img{        
+            height: 12em;
+            width: 12em;
+            border-radius: 7px;
+        }
+    }
+}
+@media only screen and (max-width: 815px) {
+    .responsive-head{
+        display: block;
+    }
+    .H-N-R{
+        display: none;
+    }
+    .card-container-start{
+        img{        
+            height: 10em;
+            width: 10em;
+            border-radius: 7px;
+        }
+    }
+    .head-3{
+        display: flex;
+        justify-content: space-evenly;  
+        height: 50%;
+        gap: 4%;
+        img{
+            height: 100px;
+        }
+    }
+    .head-3 div:nth-child(1){
+        display: flex;
+        h2{
+            font-weight: 600;
+            margin: 10px;
+        }
+        h3{
+            color: #fffc;
+            margin: 10px;
+        }
+    }
+    .restaurant-review{
+        padding: 12px;
+    }
+    
+    .restaurant-review div{
+        display: flex;
+        h4{
+            margin: 10px;
+        }
+    }
+    .icons{
+        img{
+            height: 25px;
+            filter: invert(100%);
+            align-self: center;
+        }
+    }
+    
+    .like{
+        width: 95%;
+        display: flex;
+        gap: 10px;
+        justify-content: right;
+    }
+    .responsive-head{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .card-container-middle div:nth-child(1){
+        display: flex;
+        gap: 5px;
+        .item-name{
+            color: #3d3d3d;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    
+    }
+    .card-container-middle{
+        p{
+            font-size: 10px;
+            color: rgb(116, 116, 116);
+        }
+    }
+    .card-container-start{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container-middle{
+        width: 60%;
+    }
+    .card-container-end{
+        display: none;
+    }
+    .ccer{
+        display: flex;
+        h2{
+            font-size: medium;
+        }
+        width: 100%;
+        dii
+    }
+    .add-button{
+        width: 8em;
+        height: 3em;       
+    }
 }

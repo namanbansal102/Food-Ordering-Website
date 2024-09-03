@@ -21,14 +21,25 @@ body{
     font-weight: 400
 }
 
+.more{
+    height: 6px;
+    width: 35px;
+    filter: invert(1);
+}
+.head-logo img{
+    /* filter: invert(1); */
+    /* filter: grayscale(); */
+    /* filter: invert(1); */
+}
 
 .head-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
+    
 }
+
 .head-1{
     display: flex;
     justify-content: space-evenly;
@@ -1651,3 +1662,9 @@ height: 40px;
     display: none;
 }
   }
+
+  /* .head-logo img{
+    filter: invert(1);
+    } */
+    
+    

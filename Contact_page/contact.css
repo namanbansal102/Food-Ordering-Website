@@ -39,6 +39,9 @@ main{
     }
 }
 
+.more{
+  filter: invert(1);
+}
 
 .main-1{
     /* border: 2px solid black; */

@@ -305,7 +305,7 @@ a{
 .grid-container{
     box-sizing: content-box;
     width: 90vw;
-    margin: 4em 4.5vw;
+    margin: 4em 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2em;
@@ -1336,11 +1336,7 @@ height: 40px;
         display: none;
     }
     nav{
-<<<<<<< HEAD
-        /* width: 100vw; */
-=======
         /* width: 115%; */
->>>>>>> 39631cae7658f7ee0dc02025d08a8d21b447780e
         /* margin: 1.4vh 0vw; */
     }
     .nav-left img{
@@ -1357,11 +1353,8 @@ height: 40px;
     }
     .grid-container{
         grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
-        /* margin-right:36px; */
-=======
-        margin-left:20px;
->>>>>>> 39631cae7658f7ee0dc02025d08a8d21b447780e
+        /* margin-left:20px; */
+        margin-right: 22px;
     }
     .grid{
 

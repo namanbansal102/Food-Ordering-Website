@@ -1502,7 +1502,7 @@ height: 40px;
         display: none;
     }
     nav{
-        width: 110%;
+        /* width: 110%; */
         margin: 1.4vh 0vw;
         margin-left: 10px;
     }
@@ -1533,7 +1533,7 @@ height: 40px;
     }
     .section-head div:nth-child(1){
         width: fit-content;
-        margin-left: 80px;
+        margin-left: 0px;
     
     .facility-detail div:nth-child(1){
         font-size: 1em;
@@ -1575,7 +1575,7 @@ height: 40px;
         display: none;
     }
     nav{
-        width: 115%;
+        /* width: 115%; */
         /* margin: 1.4vh 0vw; */
     }
     .nav-left img{

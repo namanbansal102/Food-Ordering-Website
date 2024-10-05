@@ -265,7 +265,7 @@ border-radius: 6%;
 .sidebar {
     width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* border: 1px solid #ddd; */
     display: flex;
     gap: 3vh;
@@ -1720,7 +1720,7 @@ height: 40px;
 
 
 
-
+/* 
 .dark_back{
     background-color: #282828;
     
@@ -1731,4 +1731,11 @@ height: 40px;
 
 .dark_icon{
     background-color: #3c3c3c;
-}
+} */
+
+
+/* .dark_back{
+    background-color: #282828;
+    
+} */
+

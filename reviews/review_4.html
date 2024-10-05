@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../blog.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -14,14 +15,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
+<style id="dark-mode-styles"></style> 
 
 <!--  -->
 
 
 </head>
 
-<body>
+<body class="dark_back">
     <header>
         <div class="head H-N-R">
             <div class="head-1">
@@ -82,7 +83,7 @@
                 <img class="more" src="https://cdn-icons-png.flaticon.com/128/6015/6015685.png" alt="">
 
                 <div class="head-logo">
-                    <img src="../images/logo-white.png" alt="">
+                    <img class="logo-r" src="../images/logo-white.png" alt="">
                     <button><span class="material-symbols-outlined">location_on
                         </span>Location</button>
     
@@ -133,16 +134,15 @@
     </header>
 
     <main>
-        <div class="main">
+        <div class="main dark_back">
 
             <div class="left ">
-
-                <div class="sidebar">
+                <div class="sidebar dark_back dark_color ">
                     <div class="search-box">
-                        <input type="text" placeholder="Search">
+                        <input type="text " class="dark_back" placeholder="Search">
                         <i class="fa fa-search"></i>
                     </div>
-                    <div class="categories-header">
+                    <div class="categories-header dark_icon">
                         <span class="cat">Categories</span>
                         <img src="https://img.icons8.com/?size=100&id=39786&format=png&color=000000" alt="" srcset="">
                     </div>
@@ -161,29 +161,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="categories-header">
-                    <span class="cat">Recent Posts</span>
+                <div class="categories-header dark_icon dark_color ">
+                    <span class="cat ">Recent Posts</span>
                     <img src="https://img.icons8.com/?size=100&id=39786&format=png&color=000000" alt="" srcset="">
                 </div>
-                <div class="recent-post ">
+                <div class="recent-post dark_color">
                     <div class="recent-post-img">
                         <img src="../images/recent_1.png" alt="" srcset="">
                     </div>
-                    <div class="recent-post-cont ">
+                    <div class="recent-post-cont dark_color">
                         <p>John Wike</p>
                         <span>20 Sep, 2024</span>
                     </div>
                 </div>
-                <div class="recent-post ">
+                <div class="recent-post dark_color">
                     <div class="recent-post-img">
                         <img src="../images/recent2.png" alt="" srcset="">
                     </div>
-                    <div class="recent-post-cont ">
+                    <div class="recent-post-cont dark_color ">
                         <p>Megan Jones</p>
                         <span>22 Nov, 2022</span>
                     </div>
                 </div>
-                <div class="recent-post ">
+                <div class="recent-post dark_color">
                     <div class="recent-post-img">
                         <img src="../images/recent_3.png" alt="" srcset="">
                     </div>
@@ -192,7 +192,7 @@
                         <span>1 Dec, 2024</span>
                     </div>
                 </div>
-                <div class="recent-post ">
+                <div class="recent-post dark_color ">
                     <div class="recent-post-img">
                         <img src="../images/recent_4.png" alt="" srcset="">
                     </div>
@@ -201,70 +201,80 @@
                         <span>1 Mar, 2024</span>
                     </div>
                 </div>
-                <div class="categories-header">
+                <div class="categories-header dark_icon dark_color">
                     <span class="cat">Tags</span>
                     <img src="https://img.icons8.com/?size=100&id=39786&format=png&color=000000" alt="" srcset="">
                 </div>
 
-                <div class="tags ">
-                    <div class="tags-1">
+                <div class="tags  ">
+                    <div class="tags-1 dark_color">
 
-                        <div class="tags-icons">Vegetables</div>
-                        <div class="tags-icons">Pharmacy</div>
-                        <div class="tags-icons">Grocery</div>
+                        <div class="tags-icons  dark_icon dark_color">Vegetables</div>
+                        <div class="tags-icons dark_icon dark_color">Pharmacy</div>
+                        <div class="tags-icons dark_icon dark_color">Grocery</div>
                     </div>
                     <div class="tags-1">
 
-                        <div class="tags-icons">Milk</div>
-                        <div class="tags-icons">Fruit</div>
-                        <div class="tags-icons">Organic</div>
+                        <div class="tags-icons dark_icon dark_color">Milk</div>
+                        <div class="tags-icons dark_icon dark_color">Fruit</div>
+                        <div class="tags-icons dark_icon dark_color">Organic</div>
                     </div>
                     <div class="tags-1">
 
-                        <div class="tags-icons">Health</div>
-                        <div class="tags-icons">Covid Care</div>
+                        <div class="tags-icons dark_icon dark_color">Health</div>
+                        <div class="tags-icons dark_icon dark_color">Covid Care</div>
                     </div>
                 </div>
-
             </div>
 
 
             <div class="right ">
-                <div class="review-1"><img src="./review_photos/r-4.png" alt=""></div>
-                <div class="review-2 ">
-                    <p>By Johnny in Food</p>
-                    <span>on April 10, 2024 By Johnny</span>
+                <div class="review-1"><img src="review_photos/r-4.png" alt=""></div>
+                <div class="review-2" id="dark_color">
+                    <p id="dark_color">By Furion in Food</p>
+                    <span id="dark_color">on May 30, 2024 By Frurion</span>
                 </div>
-                <div class="review-3">
-                    <p>Nachos are a popular Mexican-inspired dish consisting of tortilla chips topped with melted cheese and a variety of other ingredients. They are often served as a snack or appetizer and can be customized with different toppings to suit individual preferences. <br><br>
+                <div class="review-3" id="dark_color">
+                    <p>Nachos are a popular Mexican-inspired dish consisting of tortilla chips topped with melted cheese
+                        and a variety of other ingredients. They are often served as a snack or appetizer and can be
+                        customized with different toppings to suit individual preferences. <br> <br>
 
-                        The origin of nachos is attributed to Ignacio Nacho Anaya, a Mexican chef, who is said to have created the dish in the 1940s. The story goes that Anaya improvised the dish using what he had available in the kitchen to serve a group of hungry guests. He topped the tortilla chips with shredded cheese and sliced jalapeños, then heated them until the cheese melted, creating the iconic dish we know today as nachos. <br><br>
-                        
-                        Since then, nachos have become a popular dish worldwide, with many variations and toppings. Some common toppings include beans, ground beef, chicken, tomatoes, onions, sour cream, guacamole, and salsa. Nachos can be served as a simple snack or as a hearty meal, depending on the toppings and portion size. <br> <br>
-                        
-                        Whether you prefer classic nachos with just cheese and jalapeños or loaded nachos with a variety of toppings, nachos are a versatile and delicious dish that can be enjoyed in many different ways.</p>
+                        The origin of nachos is attributed to Ignacio Nacho Anaya, a Mexican chef, who is said to have
+                        created the dish in the 1940s. The story goes that Anaya improvised the dish using what he had
+                        available in the kitchen to serve a group of hungry guests. He topped the tortilla chips with
+                        shredded cheese and sliced jalapeños, then heated them until the cheese melted, creating the
+                        iconic dish we know today as nachos. <br> <br>
+
+                        Since then, nachos have become a popular dish worldwide, with many variations and toppings. Some
+                        common toppings include beans, ground beef, chicken, tomatoes, onions, sour cream, guacamole,
+                        and salsa. Nachos can be served as a simple snack or as a hearty meal, depending on the toppings
+                        and portion size. <br> <br>
+
+                        Whether you prefer classic nachos with just cheese and jalapeños or loaded nachos with a variety
+                        of toppings, nachos are a versatile and delicious dish that can be enjoyed in many different
+                        ways.</p>
                 </div>
 
                 <div class="review-4">
 
                     <div class="review-4-box">
-                        <div class="review-4-img"><img src="review_photos/person1.png" alt=""></div>
-                        <div class="review-4-name">by John wiki on</div>
+                        <div class="review-4-img" ><img src="review_photos/person1.png" alt=""></div>
+                        <div class="review-4-name" id="dark_color">by John wiki on</div>
                     </div>
 
                     <div class="review-4-box-2 ">
                         <div class="review-4-box">
 
                             <div class="review-4-like">
-                                <img src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000" alt="">
-                                <p>231k</p>
+                                <img src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000" alt="" id="inverto">
+                                <p id="dark_color">231k</p>
                             </div>
                         </div>
                         
                         <div class="review-4-box-2">
                             <div class="review-4-dislike">
-                                <img src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000" alt="">
-                                <p>12k</p>
+                                <img src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000" alt="" id="inverto">
+                                <p id="dark_color">12k</p>
                             </div>
                         </div>
                         <div class="review-4-box-btn">
@@ -275,19 +285,19 @@
                     </div>
                 </div>
 
-                <div class="comments-container">
-                    <div class="comment">
+                <div class="comments-container dark_back">
+                    <div class="comment dark_icon dark_color">
                         <div class="comment-avatar">
                             <img src="../reviews/review_photos/comment1.png" alt="Megan Jones">
                         </div>
-                        <div class="comment-content">
+                        <div class="comment-content ">
                             <h4>Megan Jones</h4>
                             <p>Aug 20, 2022</p>
                             <p>I never knew the history behind nachos! It's fascinating to learn how they were invented. Definitely going to try making them at home.</p>
                             <a href="#" class="reply">Reply</a>
                         </div>
                     </div>
-                    <div class="comment special-comment">
+                    <div class="comment special-comment dark_icon dark_color ">
                         <div class="comment-avatar ">
                             <img src="../reviews/review_photos/comment2.png" alt="Mary Brown">
                         </div>
@@ -298,7 +308,7 @@
                             <a href="#" class="reply">Reply</a>
                         </div>
                     </div>
-                    <div class="comment">
+                    <div class="comment dark_icon dark_color">
                         <div class="comment-avatar">
                             <img src="../reviews/review_photos/comment3.png" alt="Celia Abbott">
                         </div>
@@ -312,32 +322,37 @@
                 </div>
 
 
-                <div class="comment-form-container">
-                    <h2>Leave a Comment</h2>
+                <div class="comment-form-container dark_color dark_back">
+                    <h2 id="">Leave a Comment</h2>
                     <form>
                         <div class="form-group">
                             <div class="form-field">
                                 <label for="full-name">Full Name</label>
-                                <input type="text" id="full-name" placeholder="Your full name">
+                                <input   type="text" id="full-name dark_icon" placeholder="Your full name">
                             </div>
                             <div class="form-field">
                                 <label for="email-address">Email Address</label>
-                                <input type="email" id="email-address" placeholder="Your email">
+                                <input   type="email" id="email-address dark_icon" placeholder="Your email">
                             </div>
                         </div>
                         <div class="form-field">
                             <label for="comments">Comments</label>
-                            <textarea id="comments" rows="4" placeholder="Comment"></textarea>
+                            <textarea  required id="comments" rows="4" placeholder="Comment"></textarea>
                         </div>
                         <button type="submit" class="submit-button">Post Comment</button>
                     </form>
                 </div>
 
+            
+
 
             </div>
 
+            
+
         </div>
     </main>
+
     <footer>
         <div class="footer-top">
             <div class="footer-inner-1">
@@ -447,10 +462,18 @@
             @ Copyright 2024 EATSY. All rights Reserved.
         </div>
     </footer>
+
+
+
+    <button id="dark_mode">Dark</button>
+
+
     <script src="rev.js"></script>
     <script src="../footer.js"></script>
 
+    </body>
 
-</body>
+
+
 
 </html>

@@ -62,3 +62,45 @@ document.querySelector('#close-btn').addEventListener('click',()=>{
     }
 })
 
+
+
+
+
+// FOR THE DARK MODE
+let darko = document.getElementById('dark_mode');
+let current = localStorage.getItem("MODE") || "LIGHT"; // Get the current mode from local storage or default to LIGHT
+
+function enable_mod() {
+    let styleSheet = document.getElementById('dark-mode-styles');
+
+    if (current === "LIGHT") {
+        styleSheet.innerHTML = '';
+        darko.innerText = 'DARK'; 
+        localStorage.setItem("MODE", "LIGHT"); 
+    } else {
+        styleSheet.innerHTML = `
+            .dark_back {
+                background-color: #282828;
+            }
+            .dark_color {
+                color: white;
+            }
+            #dark_color {
+                color: white;
+            }
+            .dark_icon {
+                background-color: #3c3c3c;
+            }
+        `;
+        darko.innerText = 'LIGHT'; 
+        localStorage.setItem("MODE", "DARK"); 
+    }
+}
+
+
+darko.addEventListener('click', function () {
+    current = current === "LIGHT" ? "DARK" : "LIGHT"; 
+    enable_mod(); 
+});
+
+enable_mod();

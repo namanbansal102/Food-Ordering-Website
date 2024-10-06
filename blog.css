@@ -979,6 +979,75 @@ body {
     /* filter: invert(1); */
     /* border: 2px solid black; */
 }
+
+
+
+
+
+/* for the button  */
+#dark_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 90px;
+    background: linear-gradient(45deg, #f2994a, #f2c94c); /* Gradient */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px; /* Rounded corners */
+    position: fixed;
+    top: 60%;
+    left: 97.5%; /* Adjusted to ensure visibility */
+    writing-mode: vertical-rl; /* Vertical text */
+    transform: rotate(180deg); /* Flip the text */
+    padding: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  #dark_mode::before {
+    content: '\f186'; /* Unicode for moon icon */
+    font-family: FontAwesome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px; /* Adjust spacing from text */
+  }
+
+  #dark_mode:hover {
+    transition: all 0.3s ease; /* Smooth hover effect */
+    width: 45px;
+    height: 95px;
+  }
+
+
+
+/* 
+.dark_back{
+    background-color: #282828;
+    
+}
+.dark_color{
+    color: white;
+}
+
+.dark_icon{
+    background-color: #3c3c3c;
+} */
+
+
+/* .dark_back{
+    background-color: #282828;
+    
+} */
+
+
+
+
 @media only screen and (max-width: 700px) {
     
     .responsive-head{
@@ -1292,6 +1361,13 @@ height: 40px;
 .NRF{
     display: none;
 }
+
+#dark_mode{
+    left: 92%;
+    border: 2px solid yellow;
+    /* padding: 60px; */
+}
+
   }
 @media only screen and (min-width: 710px) and (max-width: 1351px) {
     footer{
@@ -1302,7 +1378,15 @@ height: 40px;
         width: 100%;
         box-sizing: border-box;
     
+
     }
+
+    #dark_mode{
+        left: 96%;
+        border: 2px solid yellow;
+        /* padding: 60px; */
+    }
+
     .search-box{
         display: none;
     }
@@ -1675,67 +1759,4 @@ height: 40px;
         box-sizing: border-box;
         height: 30vh;
     }
-
-
-
-/* for the button  */
-#dark_mode {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 90px;
-    background: linear-gradient(45deg, #f2994a, #f2c94c); /* Gradient */
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    border-radius: 10px; /* Rounded corners */
-    position: fixed;
-    top: 60%;
-    left: 97.5%; /* Adjusted to ensure visibility */
-    writing-mode: vertical-rl; /* Vertical text */
-    transform: rotate(180deg); /* Flip the text */
-    padding: 5px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    transition: all 0.3s ease; /* Smooth transition */
-  }
-
-  #dark_mode::before {
-    content: '\f186'; /* Unicode for moon icon */
-    font-family: FontAwesome;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 10px; /* Adjust spacing from text */
-  }
-
-  #dark_mode:hover {
-    transition: all 0.3s ease; /* Smooth hover effect */
-    width: 45px;
-    height: 95px;
-  }
-
-
-
-/* 
-.dark_back{
-    background-color: #282828;
-    
-}
-.dark_color{
-    color: white;
-}
-
-.dark_icon{
-    background-color: #3c3c3c;
-} */
-
-
-/* .dark_back{
-    background-color: #282828;
-    
-} */
 

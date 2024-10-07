@@ -1005,11 +1005,11 @@ body {
     padding: 5px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; 
   }
 
   #dark_mode::before {
-    content: var(--icon-content, '\f186'); /* Default moon icon */
+    content: var(--icon-content, '\f186');
     font-family: FontAwesome;
     display: flex;
     justify-content: center;
@@ -1019,7 +1019,7 @@ body {
 }
 
   #dark_mode:hover {
-    transition: all 0.3s ease; /* Smooth hover effect */
+    transition: all 0.3s ease; 
     width: 45px;
     height: 95px;
   }

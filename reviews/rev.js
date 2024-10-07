@@ -101,15 +101,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // FOR THE DARK MODE
+
 let darko = document.getElementById('dark_mode');
-let current = localStorage.getItem("MODE") || "LIGHT"; // Get the current mode from local storage or default to LIGHT
+let current = localStorage.getItem("MODE") || "LIGHT"; 
 
 function enable_mod() {
     let styleSheet = document.getElementById('dark-mode-styles');
 
     if (current === "LIGHT") {
-        styleSheet.innerHTML = '';
+        styleSheet.innerHTML = ''; 
         darko.innerText = 'DARK'; 
+        document.documentElement.style.setProperty('--icon-content', '"\\f186"'); 
         localStorage.setItem("MODE", "LIGHT"); 
     } else {
         styleSheet.innerHTML = `
@@ -125,12 +127,12 @@ function enable_mod() {
             .dark_icon {
                 background-color: #3c3c3c;
             }
-        `;
-        darko.innerText = 'LIGHT'; 
+        `; 
+        darko.innerText = 'LIGHT';
+        document.documentElement.style.setProperty('--icon-content', '"\\f185"'); 
         localStorage.setItem("MODE", "DARK"); 
     }
 }
-
 
 darko.addEventListener('click', function () {
     current = current === "LIGHT" ? "DARK" : "LIGHT"; 

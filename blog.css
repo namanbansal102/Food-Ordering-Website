@@ -977,7 +977,7 @@ body {
 
   .logo-r{
     /* filter: invert(1); */
-    /* border: 2px solid black; */
+  
 }
 
 
@@ -991,17 +991,17 @@ body {
     align-items: center;
     width: 40px;
     height: 90px;
-    background: linear-gradient(45deg, #f2994a, #f2c94c); /* Gradient */
+    background: linear-gradient(45deg, #f2994a, #f2c94c); 
     border: none;
     color: white;
     font-size: 16px;
     font-family: Arial, sans-serif;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     position: fixed;
     top: 60%;
-    left: 97.5%; /* Adjusted to ensure visibility */
-    writing-mode: vertical-rl; /* Vertical text */
-    transform: rotate(180deg); /* Flip the text */
+    left: 97.5%; 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     padding: 5px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -1009,14 +1009,14 @@ body {
   }
 
   #dark_mode::before {
-    content: '\f186'; /* Unicode for moon icon */
+    content: var(--icon-content, '\f186'); /* Default moon icon */
     font-family: FontAwesome;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin-bottom: 10px; /* Adjust spacing from text */
-  }
+    margin-bottom: 10px;
+}
 
   #dark_mode:hover {
     transition: all 0.3s ease; /* Smooth hover effect */

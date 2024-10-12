@@ -135,7 +135,8 @@
             <div class="left ">
                 <div class="sidebar dark_back dark_color ">
                     <div class="search-box">
-                        <input type="text " class="dark_back" placeholder="Search">
+<input type="text" class="dark_back" id="searchInput" placeholder="Search for a recipe..." onkeypress="if(event.key === 'Enter') { searchRecipes(); }">
+
                         <i class="fa fa-search"></i>
                     </div>
                     <div class="categories-header dark_icon">
@@ -417,7 +418,7 @@
     <button id="dark_mode">Dark</button>
 
 
-    
+    <div id="results"></div>
 
     <script src="blog.js"></script>
     <script src="footer.js"></script>

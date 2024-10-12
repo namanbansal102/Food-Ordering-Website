@@ -108,3 +108,12 @@ darko.addEventListener('click', function () {
 });
 
 enable_mod();
+
+
+
+
+
+function searchRecipes() {
+    const query = document.getElementById('searchInput').value;
+    window.location.href = `results.html?query=${encodeURIComponent(query)}`;
+}

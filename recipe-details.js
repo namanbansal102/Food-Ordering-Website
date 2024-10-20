@@ -1,5 +1,5 @@
 async function getRecipeDetails(recipeId) {
-    const apiKey = '373d85bd012449939f17fe0fb5cae1eb';
+    const apiKey = 'b01364bef28b48bdb4f7389c37c2f596';
     const url = `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${apiKey}`;
 
     try {

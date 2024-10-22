@@ -1,181 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    background-color: #1a1a1a;
     overflow: hidden;
-    width: 450px;
-    max-width: 100%;
-    padding: 40px;
-    transition: all 0.3s ease;
 }
 
-.container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.form-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.highlight {
-    color: #ff5e62;
-}
-
-.input-group {
+.register-container {
     position: relative;
-    margin-bottom: 25px;
+    width: 400px;
+    height: 600px;
+    background: #2a2a2a;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.input-group input,
-.input-group select {
-    width: 100%;
-    padding: 12px 15px;
-    border: none;
-    border-bottom: 2px solid #ddd;
-    background-color: transparent;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.input-group label {
+.register-container::before {
+    content: '';
     position: absolute;
-    top: 12px;
-    left: 15px;
-    font-size: 16px;
-    color: #999;
-    transition: all 0.3s ease;
-    pointer-events: none;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #ff6b00, #ff6b00);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
 }
 
-.input-group input:focus,
-.input-group select:focus {
-    border-bottom-color: #ff5e62;
-}
-
-.input-group input:focus ~ label,
-.input-group input:valid ~ label,
-.input-group select:focus ~ label,
-.input-group select:valid ~ label {
-    top: -20px;
-    font-size: 12px;
-    color: #ff5e62;
-}
-
-.input-group i {
+.register-container::after {
+    content: '';
     position: absolute;
-    top: 14px;
-    right: 15px;
-    color: #999;
-    transition: all 0.3s ease;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #ff6b00, #ff6b00);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
 }
 
-.input-group input:focus ~ i,
-.input-group select:focus ~ i {
-    color: #ff5e62;
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.checkbox-group {
+.register-form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 20px;
+    background: #2a2a2a;
+    z-index: 10;
+    padding: 50px 40px;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-.checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
+.register-form h2 {
+    color: #ff6b00;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
-.checkbox-group label {
-    font-size: 14px;
-    color: #666;
+.input-box {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
 }
 
-.btn-submit {
+.input-box input {
+    position: relative;
     width: 100%;
-    padding: 14px;
-    background-color: #ff5e62;
-    color: #fff;
+    padding: 20px 10px 10px;
+    background: transparent;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+    color: #ff6b00;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff6b00;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.input-box input:valid ~ i,
+.input-box input:focus ~ i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+    color: #ff6b00;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #ff6b00;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.btn-submit:hover {
-    background-color: #ff9966;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(255, 94, 98, 0.3);
+input[type="submit"]:active {
+    opacity: 0.8;
 }
 
-.login-link {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-}
-
-.login-link a {
-    text-decoration: none;
-    font-weight: 600;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.form-container {
-    animation: fadeIn 0.5s ease-out;
-}
-
-.input-group, .checkbox-group {
-    animation: fadeIn 0.5s ease-out;
-    animation-fill-mode: both;
-}
-
-.input-group:nth-child(1) { animation-delay: 0.1s; }
-.input-group:nth-child(2) { animation-delay: 0.2s; }
-.input-group:nth-child(3) { animation-delay: 0.3s; }
-.input-group:nth-child(4) { animation-delay: 0.4s; }
-.input-group:nth-child(5) { animation-delay: 0.5s; }
-.input-group:nth-child(6) { animation-delay: 0.6s; }
-.input-group:nth-child(7) { animation-delay: 0.7s; }
-.checkbox-group { animation-delay: 0.8s; }
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        border-radius: 0;
-        padding: 30px 20px;
-    }
+.error-message {
+    color: #ff3e3e;
+    font-size: 0.75em;
+    margin-top: 5px;
+    display: none;
 }

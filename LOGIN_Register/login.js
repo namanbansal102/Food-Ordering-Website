@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Login successful!');
             // Store the logged-in user's email in session storage
             sessionStorage.setItem('loggedInUser', email);
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         } else {
             alert('Invalid email or password!');
         }

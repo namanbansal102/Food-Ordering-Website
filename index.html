@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/blog.css">
+    <style id="dark-mode-styles"></style> 
+
 </head>
-<body>
+<body class="dark_back">
     
     <header>
         <nav>
@@ -34,37 +36,39 @@
             </div>
         </div>
             <div class="nav-left">
-                <img src="images/logo.png" alt="">
+                <img class="invert" src="images/logo.png" alt="">
                 <button><span class="material-symbols-outlined">
                     location_on
                     </span>Location</button>
             </div>
             <div class="nav-center">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Order<span class="material-symbols-outlined">
+                    <li class="invert"><a href="">Home</a></li>
+                    <li class="invert"><a href="">Order<span class="material-symbols-outlined">
                         keyboard_arrow_down
                         </span></a></li>
-                    <li><a href="blog.html">Blog<span class="material-symbols-outlined">
+                    <li class="invert"><a href="blog.html">Blog<span class="material-symbols-outlined">
                         keyboard_arrow_down
                         </span></a></li>
-                    <li><a href="">Pages<span class="material-symbols-outlined">
+                    <li class="invert"><a href="">Pages<span class="material-symbols-outlined">
                         keyboard_arrow_down
                         </span></a></li>
-                    <li><a href="Contact_page/contact.html">Contact</a></li>
+                    <li class="invert"><a href="Contact_page/contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined" id="dark_color">
                     shopping_cart
                     </span>
-                <div class="account">
-                    <img src="images/Mark.png" alt="">
-                    <div class="account-name">
-                        <div>Hi Mark Jecno</div>
-                        <div>My Account</div>
+                <a href="LOGIN_Register/login.html">
+                    <div class="account">
+                        <img src="images/Mark.png" alt="">
+                        <div class="account-name">
+                            <div>Hi Mark Jecno</div>
+                            <div class="dark_color">My Account</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             
         </nav>
@@ -104,28 +108,28 @@
                 <div class="facility">
                     <img src="images/routing.svg" alt="">
                     <div class="facility-detail">
-                        <div>Wide Map</div>
+                        <div class="dark_color">Wide Map</div>
                         <div>Wide Range of Map, Order from anywhere</div>
                     </div>
                 </div>
                 <div class="facility">
                     <img src="images/3d-rotate.svg" alt="">
                     <div class="facility-detail">
-                        <div>Easiest Order</div>
+                        <div class="dark_color">Easiest Order</div>
                         <div>Easy and hussle free order online process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~</div>
                     </div>
                 </div>
                 <div class="facility">
                     <img src="images/truck.svg" alt="">
                     <div class="facility-detail">
-                        <div>Most Delivery</div>
+                        <div class="dark_color">Most Delivery</div>
                         <div>we ensure your food is delivered swiftly</div>
                     </div>
                 </div>
                 <div class="facility">
                     <img src="images/credit-card.svg" alt="" height="50em">
                     <div class="facility-detail">
-                        <div>Various Payment</div>
+                        <div class="dark_color">Various Payment</div>
                         <div>Various payment options to make order seamless</div>
                     </div>
                 </div>
@@ -135,14 +139,14 @@
     <section>
             <center>
                 <div class="section-head">
-                    <div>Tasty Food To Your Destination <h1 style="color: orange; font-size: 23px;">
+                    <div id="dark_color">Tasty Food To Your Destination <h1 style="color: orange; font-size: 23px;">
                         In 20 Mins.
                     </h1></div>
                 </div>
             </center>
             <center>
         <div class="grid-container"><a href="/Restaurant_Pages/R1.html">
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-1.png" alt=""></div>
                 <img class="white-box" src="images/shape.png" alt="">
                 <div class="off">
@@ -150,23 +154,23 @@
                     <div>50% OFF</div>
                 </div>
                 <div class="place-name">
-                    <div>Poultry Palace</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Poultry Palace</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.9</div>
                 </div>
                 <div class="place-item">Chicken quesadilla, avocado....</div>
                 <div class="place">
-                    <div>New Jsercy</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">New Jsercy</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>3.2 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>25 min</div>
                 </div>
             </div></a>
-            <a href="/Restaurant_Pages/R2.html"><div class="grid">
+            <a href="/Restaurant_Pages/R2.html"><div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-2.png" alt=""></div>
                 <!-- <img class="white-box" src="images/shape.png" alt="">
                 <div class="off">
@@ -174,80 +178,80 @@
                     <div>50% OFF</div>
                 </div> -->
                 <div class="place-name">
-                    <div>Ribeya Junction</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Ribeya Junction</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.2</div>
                 </div>
                 <div class="place-item">Chicken quesadilla, avocado....</div>
                 <div class="place">
-                    <div>California</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">California</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>1 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>10 min</div>
                 </div>
             </div></a>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-3.png" alt=""></div>
                 <div class="place-name">
-                    <div>The Grill's Master Cafe</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">The Grill's Master Cafe</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.9</div>
                 </div>
                 <div class="place-item">Bread, Eggs, Butter, Fries...</div>
                 <div class="place">
-                    <div>New York</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">New York</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>5 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>40 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-4.png" alt=""></div>
                 <div class="place-name">
-                    <div>Cozy Cuppa Cafe</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Cozy Cuppa Cafe</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.9</div>
                 </div>
                 <div class="place-item">cheesecake, waffles, Cakes,...</div>
                 <div class="place">
-                    <div>Dallas</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Dallas</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>4 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>30 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-5.png" alt=""></div>
                 <div class="place-name">
-                    <div>Mocha Magic Cafe</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Mocha Magic Cafe</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.9</div>
                 </div>
                 <div class="place-item">Chinese, Momos, Dumplings,...</div>
                 <div class="place">
-                    <div>Seattle</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Seattle</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>1 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>8 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-6.png" alt=""></div>
                 <!-- <img class="white-box" src="images/shape.png" alt="">
                 <div class="off">
@@ -255,23 +259,23 @@
                     <div>50% OFF</div>
                 </div> -->
                 <div class="place-name">
-                    <div>Latte Lounge</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Latte Lounge</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.9</div>
                 </div>
                 <div class="place-item">Chicken fingers, Chicken goujons,....</div>
                 <div class="place">
-                    <div>Atlanta</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Atlanta</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>3 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>25 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-7.png" alt=""></div>
                 <img class="white-box" src="images/shape.png" alt="">
                 <div class="off">
@@ -279,23 +283,23 @@
                     <div>50% OFF</div>
                 </div>
                 <div class="place-name">
-                    <div>The Burger Ban</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">The Burger Ban</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.8</div>
                 </div>
                 <div class="place-item">Burger, Garlic Bread, Sandwich....</div>
                 <div class="place">
-                    <div>Chicago</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Chicago</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>2.4 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>20 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-8.png" alt=""></div>
                 <!-- <img class="white-box" src="images/shape.png" alt="">
                 <div class="off">
@@ -303,56 +307,56 @@
                     <div>50% OFF</div>
                 </div> -->
                 <div class="place-name">
-                    <div>Wing Master</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Wing Master</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>3.2</div>
                 </div>
                 <div class="place-item">Chicken quesadilla, avocado....</div>
                 <div class="place">
-                    <div>New York</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">New York</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>1.8 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>12 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-15.png" alt=""></div>
                 <div class="place-name">
-                    <div>Lettuce Eat Bistro</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Lettuce Eat Bistro</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>7.9</div>
                 </div>
                 <div class="place-item">cheesecake, waffles, Cakes,...</div>
                 <div class="place">
-                    <div>Ottawa</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Ottawa</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>12 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>60 min</div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid dark_icon">
                 <div><img class="item-image" src="images/vp-1.png" alt=""></div>
                 <div class="place-name">
-                    <div>Take it Cheesy</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Take it Cheesy</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         stars
                         </span>5.0</div>
                 </div>
                 <div class="place-item">cheesecake, waffles, Cakes,...</div>
                 <div class="place">
-                    <div>Victoria</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color">Victoria</div>
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         location_on
                         </span>9 km</div>
-                    <div><span class="material-symbols-outlined">
+                    <div class="dark_color"><span class="material-symbols-outlined">
                         schedule
                         </span>3 min</div>
                 </div>
@@ -481,6 +485,8 @@
             @ Copyright 2024 EATSY. All rights Reserved.
         </div>
     </footer>
+    <button id="dark_mode">Dark</button>
+    <script src="dark.js"></script>
     <script src="footer.js"></script>
 </body>
 </html>

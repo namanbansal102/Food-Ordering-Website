@@ -25,6 +25,9 @@ function enable_mod() {
             .dark_icon {
                 background-color: #3c3c3c;
             }
+            .invert{
+                filter: invert();
+            }
         `; 
         darko.innerText = 'LIGHT';
         document.documentElement.style.setProperty('--icon-content', '"\\f185"'); 
